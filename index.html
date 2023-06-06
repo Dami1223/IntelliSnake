@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description"
+        content="IA para jugar al clásico juego del Snake. Desarrollada con algoritmos de busqueda en grafos." />
+    <title>IntelliSnake</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h2>Puntaje Actual: <span id="puntaje">0</span></h2>
+        <h2>Mejor Puntaje: <span id="mejor-puntaje">0</span></h2>
+        <label for="velocidad">Velocidad:</label>
+        <input type="number" id="velocidad" name="velocidad" step="10" value="20" min="0" max="400">
+    </div>
+    <canvas style="background-color: black;" id="miCanvas" width="1200" height="600"></canvas>
+
+    <script src="snake.js"></script>
+
+    <style>
+        .contenedor {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #miCanvas {
+            margin-top: 20px;
+        }
+    </style>
+</body>
+
+</html>
